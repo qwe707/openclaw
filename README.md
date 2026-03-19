@@ -18,7 +18,7 @@ pnpm add -g openclaw@latest
 
 1. 运行新手引导
 ```bash
-openclaw onboard --install-daemon
+openclaw onboard 
 ```
 
 2. 登录渠道
@@ -28,7 +28,7 @@ openclaw channels login
 
 3. 启动 Gateway
 ```bash
-openclaw gateway --port 18789
+openclaw gateway 
 ```
 
 ## 支持的渠道
