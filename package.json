@@ -1,0 +1,35 @@
+{
+  "name": "openclaw",
+  "version": "2026.2.26",
+  "description": "Multi-channel AI gateway with extensible messaging integrations",
+  "keywords": ["ai", "gateway", "messaging", "chatbot", "automation"],
+  "homepage": "https://github.com/openclaw/openclaw#readme",
+  "bugs": {
+    "url": "https://github.com/openclaw/openclaw/issues"
+  },
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openclaw/openclaw.git"
+  },
+  "bin": {
+    "openclaw": "openclaw.mjs"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "node scripts/run-node.mjs",
+    "start": "node scripts/run-node.mjs",
+    "gateway:dev": "OPENCLAW_SKIP_CHANNELS=1 node scripts/run-node.mjs --dev gateway",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint --type-aware",
+    "format": "oxfmt --write"
+  }
+}
